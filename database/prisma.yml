@@ -1,0 +1,7 @@
+endpoint: https://us1.prisma.sh/larissa/database/dev
+
+datamodel: datamodel.graphql
+
+hooks:
+  post-deploy:
+    - graphql get-schema --project database
